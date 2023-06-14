@@ -11,6 +11,10 @@ import (
 	etcd "github.com/kitex-contrib/registry-etcd"
 )
 
+var (
+	rdb = &RedisClient{}
+)
+
 func main() {
 	ctx := context.Background() // https://www.digitalocean.com/community/tutorials/how-to-use-contexts-in-go
 
